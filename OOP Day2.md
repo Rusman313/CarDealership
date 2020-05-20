@@ -45,3 +45,4 @@ New things we learned about today
 1. Enumeration (SUNDAY) 
 2. instanceof keyword
 3. How to work with a multifile Java program in VS Code. 
+4. Brief intro to annotations, mainly @Override
