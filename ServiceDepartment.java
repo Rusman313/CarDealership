@@ -8,6 +8,7 @@ public class ServiceDepartment extends Department {
 
     @Override
     public boolean isOpenToday(LocalDateTime day) {
+        //SUNDAY is an example of an enumeration
         if (day.getDayOfWeek().equals(DayOfWeek.SUNDAY)) {
             return false;
         } else {

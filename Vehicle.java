@@ -4,9 +4,10 @@ public class Vehicle{
     private String VIN, make, model, color;
     private double wholesaleCost, retailPrice;
     private int modelYear;
+    private VehicleClassification vehicleClass;
 
     //our constructor with all given properties
-    public Vehicle(String VIN, double wholesaleCost, double retailPrice, int modelYear, String make, String model,String color) {
+    public Vehicle(String VIN, double wholesaleCost, double retailPrice, int modelYear, String make, String model,String color, VehicleClassification vehicleClass) {
         this.VIN = VIN;
         this.wholesaleCost = wholesaleCost;
         this.retailPrice = retailPrice;
@@ -14,6 +15,7 @@ public class Vehicle{
         this.make = make;
         this.model = model;
         this.color = color;
+
     }
 
     //Getters then Setters
@@ -59,6 +61,12 @@ public class Vehicle{
     public void setColor(String color){
         this.color = color;
     }
+    public VehicleClassification getVehicleClass(){
+        return vehicleClass;
+    }
+    public void setVehicleClass(VehicleClassification vehicleClass){
+        this.vehicleClass = vehicleClass;
+    }
 
     @Override//Annotation telling us and compiler that we are Overriding previously defined behavior
     public String toString(){
@@ -71,4 +79,3 @@ public class Vehicle{
     }
 
 }
-
