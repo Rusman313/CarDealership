@@ -14,6 +14,10 @@ public abstract class Department {
         for (Department d: depts){
             // print out name of Dept and return if that Dept is open today
             System.out.println(d.toString() + "is open today?" + d.isOpenToday(today));
+            //Use instanceof keyword to test if item in list is of a certain object or data type
+            if (d instanceof ServiceDepartment){
+                System.out.println(d.toString() + "only closes on Sundays.");
+            }
         }
     }
 
